@@ -22,8 +22,8 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val settingsBtn = view.rootView.findViewById<Button>(R.id.goToSettings)
-        val profileBtn = view.rootView.findViewById<Button>(R.id.goToNotif)
-        val notifBtn = view.rootView.findViewById<Button>(R.id.goToProfile)
+        val profileBtn = view.rootView.findViewById<Button>(R.id.goToProfile)
+        val notifBtn = view.rootView.findViewById<Button>(R.id.goToNotif)
 
         settingsBtn.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_settingsFragment)
